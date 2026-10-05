@@ -8,7 +8,7 @@
 
 [![License](https://img.shields.io/badge/license-Custom-1f6feb)](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE.txt)
 [![Downloads](https://img.shields.io/github/downloads/Velo-Client/Velo-Client/latest/total?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/latest)
-[![Version](https://img.shields.io/github/v/release/Velo-Client/Velo-Client?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/tag/v1.1.2)
+[![Version](https://img.shields.io/github/v/release/Velo-Client/Velo-Client?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/latest)
 
 </div>
 
@@ -25,7 +25,7 @@ Because the binaries are protected using code obfuscation to prevent unauthorize
 ## Getting Started
 
 To grab the latest build:
-1. Head over to the [V1.1.2 Release Page](https://github.com/Velo-Client/Velo-Client/releases/tag/v1.1.2) (or check out the [latest releases overview](https://github.com/Velo-Client/Velo-Client/releases/latest)).
+1. Head over to the [Latest Releases Page](https://github.com/Velo-Client/Velo-Client/releases/latest).
 2. Download the executable file provided in the assets.
 3. Run the application (and bypass any SmartScreen/antivirus false-positive prompts if they appear).
 
