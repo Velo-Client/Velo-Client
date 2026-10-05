@@ -14,13 +14,13 @@
 
 ----
 
-**Velo Client** is an advanced, next-generation custom Roblox launcher designed to completely redefine how you play. Built as a powerful upgrade to older tools like Bloxstrap and others, Velo Client delivers a much cleaner, simpler UI with a heavy focus on automation—automatically keeping both itself and your Roblox installation up to date seamlessly. 
+**Velo Client** is an advanced custom Roblox launcher designed to completely change how you play. Built as a powerful upgrade to older tools like Bloxstrap, Velo Client gives you a much cleaner and simpler interface. It focuses heavily on automatic updates so that both the launcher and your game stay current without you needing to do it manually. 
 
-Designed to feel like a true standalone gaming client (similar to Vencord for Discord), it brings lightweight performance, zero bloat, and totally free utility, with plenty of fun visual features (like on-screen following pets while you play!) and powerful tools on the way.
+It is designed to feel like a real standalone gaming client, similar to Vencord for Discord, bringing lightweight performance, zero bloat, and total freedom, alongside fun features like on-screen following pets while you play and cool tools on the way.
 
 ## About the Source Code & Security
 
-Please note that **the source code for Velo Client is closed-source** and will not be published publicly, primarily for safety and anti-theft protection. 
+Please note that **the source code for Velo Client is closed-source** and will not be published publicly, mostly for safety and anti-theft protection. 
 
 Because the binaries are protected using code obfuscation to prevent unauthorized tampering, **certain antivirus programs or Windows SmartScreen may flag the executable as a false positive**. This is normal behavior for obfuscated software. If you trust this repository, you can safely bypass the warning to run the application.
 
@@ -29,11 +29,11 @@ Because the binaries are protected using code obfuscation to prevent unauthorize
 To grab the latest build:
 1. Head over to the [Latest Releases Page](https://github.com/Velo-Client/Velo-Client/releases/latest).
 2. Download the executable file provided in the assets.
-3. Run the application (and bypass any SmartScreen/antivirus false-positive prompts if they appear).
+3. Run the application and bypass any SmartScreen or antivirus false-positive prompts if they pop up.
 
 ## Issues and Feedback
 
-If you happen to run into a critical bug or want to leave feedback, feel free to open an issue directly in the [GitHub Issues tab](https://github.com/Velo-Client/Velo-Client/issues). Keep in mind that response times may vary since this is just a side project!
+If you happen to run into a bug or want to leave feedback, feel free to open an issue directly in the [GitHub Issues tab](https://github.com/Velo-Client/Velo-Client/issues). Keep in mind that response times may vary since this is just a side project.
 
 ---
 Licensed under the [Velo-Client License](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE.txt).
