@@ -37,4 +37,4 @@ To grab the latest build:
 If you happen to run into a bug or want to leave feedback, feel free to open an issue directly in the [GitHub Issues tab](https://github.com/Velo-Client/Velo-Client/issues). Keep in mind that response times may vary since this is just a side project.
 
 ---
-Licensed under the [Velo-Client License](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE.txt).
+Licensed under the [Velo-Client License](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE).
