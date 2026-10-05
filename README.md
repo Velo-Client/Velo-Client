@@ -7,7 +7,7 @@
 <div align="center">
 
 [![License](https://img.shields.io/badge/license-Custom-1f6feb)](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE.txt)
-[![Downloads](https://img.shields.io/github/downloads/Velo-Client/Velo-Client/latest/total?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Velo-Client/Velo-Client/total?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/latest)
 [![Version](https://img.shields.io/github/v/release/Velo-Client/Velo-Client?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/latest)
 
 </div>
