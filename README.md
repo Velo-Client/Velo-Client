@@ -14,7 +14,9 @@
 
 ----
 
-**Velo Client** is a lightweight, custom utility designed to enhance your experience. Built purely for fun and experimentation as a hobby project.
+**Velo Client** is an advanced, next-generation custom Roblox launcher designed to completely redefine how you play. Built as a powerful upgrade to older tools like Bloxstrap and others, Velo Client delivers a much cleaner, simpler UI with a heavy focus on automation—automatically keeping both itself and your Roblox installation up to date seamlessly. 
+
+Designed to feel like a true standalone gaming client (similar to Vencord for Discord), it brings lightweight performance, zero bloat, and totally free utility, with plenty of fun visual features (like on-screen following pets while you play!) and powerful tools on the way.
 
 ## About the Source Code & Security
 
