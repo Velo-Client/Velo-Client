@@ -1,4 +1,4 @@
-# Copyright (c) 2026 Vortex. All rights reserved.
+# Copyright (c) 2026 Velo-Client. All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software, to download and run the software for personal, non-commercial use only.
