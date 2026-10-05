@@ -6,9 +6,9 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/github/license/Velo-Client/Velo-Client)](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/Velo-Client/Velo-Client/latest/total?color=981bfe)](https://github.com/Velo-Client/Velo-Client/releases/latest)
-[![Version](https://img.shields.io/github/v/release/Velo-Client/Velo-Client?color=7a39fb)](https://github.com/Velo-Client/Velo-Client/releases/tag/v1.1.2)
+[![License](https://img.shields.io/badge/license-Custom-1f6feb)](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE.txt)
+[![Downloads](https://img.shields.io/github/downloads/Velo-Client/Velo-Client/latest/total?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/latest)
+[![Version](https://img.shields.io/github/v/release/Velo-Client/Velo-Client?color=1f6feb)](https://github.com/Velo-Client/Velo-Client/releases/tag/v1.1.2)
 
 </div>
 
@@ -34,4 +34,4 @@ To grab the latest build:
 If you happen to run into a critical bug or want to leave feedback, feel free to open an issue directly in the [GitHub Issues tab](https://github.com/Velo-Client/Velo-Client/issues). Keep in mind that response times may vary since this is just a side project!
 
 ---
-Licensed under the [Velo-Client License](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE).
+Licensed under the [Velo-Client License](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE.txt).
