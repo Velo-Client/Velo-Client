@@ -1,14 +1,21 @@
+PROPRIETARY SOFTWARE LICENSE AGREEMENT
+
 Copyright (c) 2026 Velo-Client. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software, to download and run the software for personal, non-commercial use only.
+NOTICE TO USERS: This software and accompanying documentation are protected by copyright law and international treaty provisions. Unauthorized reproduction, reverse engineering, or distribution of this software, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.
 
-You are STRICTLY prohibited from:
+1. GRANT OF LICENSE
+Subject to the terms and conditions herein, Velo-Client grants you a personal, non-exclusive, non-transferable, revocable, and limited license to download and run a copy of the software strictly for personal, non-commercial use only.
 
-Modifying, editing, or creating derivative works of the code.
+2. RESTRICTIONS
+You are strictly prohibited from engaging in, or permitting any third party to engage in, any of the following activities:
+   - Modifying, adapting, translating, reverse engineering, decompiling, disassembling, or creating derivative works based upon the software or any part thereof.
+   - Distributing, publishing, licensing, sublicensing, renting, leasing, selling, or otherwise transferring or assigning rights to the software or documentation.
+   - Removing, altering, or obscuring any proprietary notices, labels, or copyright marks on or within the software.
+   - Claiming ownership, copyright, or authorship of the software, or representing the software as the work of anyone other than Velo-Client.
 
-Distributing, publishing, or sublicensing the code or software.
+3. INTELLECTUAL PROPERTY RIGHTS
+All title, ownership rights, and intellectual property rights in and to the software (including but not limited to any source code, binaries, images, animations, text, and applets incorporated into the software) are owned by Velo-Client. 
 
-Claiming ownership, copyright, or authorship of the software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+4. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
