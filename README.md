@@ -1,39 +1,37 @@
 > [!CAUTION]
-> The only official place to download Velo Client is this GitHub repository. Any other websites offering downloads or claiming to be us are not owned by us.
+> **Velo Client is exclusively distributed through this GitHub repository.** There is no official website or alternative download mirror. Any other links or sources claiming to offer official downloads are unauthorized and should be avoided.
 
-<p align="center">
-    <!-- Replace these image links with your own banner if you have one, or delete these two lines -->
-    <h1>Velo Client</h1>
-</p>
+> [!IMPORTANT]
+> **Velo Client is currently in a heavy beta stage.** Because this is developed purely as a casual hobby project in our free time, updates may be infrequent, and bugs or unexpected issues are likely to occur. There is no official community Discord server or support desk.
 
 <div align="center">
 
-[![License](https://img.shields.io/github/license/Velo-Client/your-repo-name)](https://github.com/Velo-Client/your-repo-name/blob/main/LICENSE)
-[![Downloads](https://img.shields.io/github/downloads/Velo-Client/your-repo-name/latest/total?color=981bfe)](https://github.com/Velo-Client/your-repo-name/releases)
-[![Version](https://img.shields.io/github/v/release/Velo-Client/your-repo-name?color=7a39fb)](https://github.com/Velo-Client/your-repo-name/releases/latest)
+[![License](https://img.shields.io/github/license/Velo-Client/Velo-Client)](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/Velo-Client/Velo-Client/latest/total?color=981bfe)](https://github.com/Velo-Client/Velo-Client/releases/latest)
+[![Version](https://img.shields.io/github/v/release/Velo-Client/Velo-Client?color=7a39fb)](https://github.com/Velo-Client/Velo-Client/releases/tag/v1.1.2)
 
 </div>
 
 ----
 
-Velo Client is a custom client providing additional useful features and improvements.
+**Velo Client** is a lightweight, custom utility designed to enhance your experience. Built purely for fun and experimentation as a hobby project.
 
-Running into a problem or need help with something? Please [submit an issue](https://github.com/Velo-Client/your-repo-name/issues).
+## About the Source Code & Security
 
-Velo Client is only supported for PCs running Windows.
+Please note that **the source code for Velo Client is closed-source** and will not be published publicly, primarily for safety and anti-theft protection. 
 
-## Frequently Asked Questions
+Because the binaries are protected using code obfuscation to prevent unauthorized tampering, **certain antivirus programs or Windows SmartScreen may flag the executable as a false positive**. This is normal behavior for obfuscated software. If you trust this repository, you can safely bypass the warning to run the application.
 
-**Q: Is this malware?**
+## Getting Started
 
-**A:** No. The source code here is viewable to all, and it'd be impossible to slip anything malicious into the downloads without anyone noticing. Just be sure you're downloading it from this official GitHub repository.
+To grab the latest build:
+1. Head over to the [V1.1.2 Release Page](https://github.com/Velo-Client/Velo-Client/releases/tag/v1.1.2) (or check out the [latest releases overview](https://github.com/Velo-Client/Velo-Client/releases/latest)).
+2. Download the executable file provided in the assets.
+3. Run the application (and bypass any SmartScreen/antivirus false-positive prompts if they appear).
 
-## Features
+## Issues and Feedback
 
-- Feature one description goes here
-- Feature two description goes here
+If you happen to run into a critical bug or want to leave feedback, feel free to open an issue directly in the [GitHub Issues tab](https://github.com/Velo-Client/Velo-Client/issues). Keep in mind that response times may vary since this is just a side project!
 
-## Installing
-Download the [latest release of Velo Client](https://github.com/Velo-Client/your-repo-name/releases/latest), and run it. Configure your preferences if needed, and enjoy!
-
-It's not unlikely that Windows Smartscreen will show a popup when you run it for the first time. This happens because it's an independent program, not because it's actually detected as being malicious. To dismiss it, just click on "More info" and then "Run anyway".
+---
+Licensed under the [Velo-Client License](https://github.com/Velo-Client/Velo-Client/blob/main/LICENSE).
