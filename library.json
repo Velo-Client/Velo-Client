@@ -3,17 +3,6 @@
   "updated": "2026-10-06",
   "flags": [
     {
-      "name": "DFIntTaskSchedulerTargetFps",
-      "type": "int",
-      "default": 9999,
-      "range": [30, 9999],
-      "description": "Sets the target frame rate. Roblox may ignore this on some configurations. 9999 means uncapped.",
-      "category": "Performance",
-      "impact": "performance",
-      "safe": true,
-      "deprecated": true
-    },
-    {
       "name": "DFIntCSGLevelOfDetailSwitchingDistance",
       "type": "int",
       "default": 1000,
@@ -58,75 +47,180 @@
       "deprecated": false
     },
     {
-      "name": "FFlagDebugSkyGray",
+      "name": "FFlagHandleAltEnterFullscreenManually",
       "type": "bool",
       "default": false,
-      "description": "Overrides the skybox to a flat gray color and removes atmospheric stars. Roblox removed read access to this flag in 2025.",
+      "description": "Enables manual handling of Alt+Enter for exclusive fullscreen. Can reduce input latency on supported systems.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true,
-      "deprecated": true
+      "deprecated": false
     },
     {
-      "name": "FFlagTextureQualityOverrideEnabled",
+      "name": "DFFlagTextureQualityOverrideEnabled",
       "type": "bool",
       "default": true,
-      "description": "Enables the texture quality override below. Roblox removed read access to this flag in 2025.",
+      "description": "Enables the texture quality override below. Must be true for DFIntTextureQualityOverride to take effect.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true,
-      "deprecated": true
+      "deprecated": false
     },
     {
       "name": "DFIntTextureQualityOverride",
       "type": "int",
       "default": 1,
       "allowed": [0, 1, 2, 3],
-      "description": "Forces texture quality. Roblox removed read access to this flag in 2025.",
+      "description": "Forces texture quality. 0 is lowest (fastest), 3 is highest (best visuals).",
       "category": "Rendering",
       "impact": "performance",
       "safe": true,
-      "deprecated": true
+      "deprecated": false
     },
     {
-      "name": "FIntFRMMaxGrassDistance",
+      "name": "FIntDebugForceMSAASamples",
       "type": "int",
       "default": 0,
-      "range": [0, 500],
-      "description": "Maximum distance for grass rendering. Roblox removed read access to this flag in 2025.",
+      "allowed": [1, 2, 4],
+      "description": "Forces MSAA anti-aliasing samples. Higher values smooth edges but reduce FPS.",
       "category": "Rendering",
-      "impact": "performance",
+      "impact": "quality",
       "safe": true,
-      "deprecated": true
+      "deprecated": false
     },
     {
-      "name": "FIntFRMMinGrassDistance",
-      "type": "int",
-      "default": 0,
-      "range": [0, 500],
-      "description": "Minimum distance for grass rendering. Roblox removed read access to this flag in 2025.",
+      "name": "DFFlagDisableDPIScale",
+      "type": "bool",
+      "default": false,
+      "description": "Disables DPI scaling for the Roblox window. Useful on high-DPI displays where the UI appears blurry.",
+      "category": "Rendering",
+      "impact": "quality",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "FFlagDebugGraphicsPreferD3D11",
+      "type": "bool",
+      "default": false,
+      "description": "Forces DirectX 11 rendering instead of the default. Can improve stability on some Windows systems.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true,
-      "deprecated": true
+      "deprecated": false
+    },
+    {
+      "name": "FFlagDebugSkyGray",
+      "type": "bool",
+      "default": false,
+      "description": "Overrides the skybox to a flat gray color and removes atmospheric stars. Can improve FPS in sky-heavy games.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "DFFlagDebugPauseVoxelizer",
+      "type": "bool",
+      "default": false,
+      "description": "Pauses the voxelizer after the initial load. Can reduce stutter in large worlds.",
+      "category": "Performance",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
     },
     {
       "name": "DFIntDebugFRMQualityLevelOverride",
       "type": "int",
       "default": 1,
       "allowed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
-      "description": "Forces a global RenderQuality level. Roblox removed read access to this flag in 2025.",
+      "description": "Forces a global RenderQuality level. Lower is faster, higher is better visuals.",
       "category": "Rendering",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "FIntFRMMaxGrassDistance",
+      "type": "int",
+      "default": 0,
+      "range": [0, 500],
+      "description": "Maximum distance for grass rendering. 0 disables grass entirely.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "FIntFRMMinGrassDistance",
+      "type": "int",
+      "default": 0,
+      "range": [0, 500],
+      "description": "Minimum distance for grass rendering.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "FFlagDebugGraphicsPreferVulkan",
+      "type": "bool",
+      "default": false,
+      "description": "Forces the Vulkan rendering backend. Can improve performance on modern GPUs that support it well.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "FFlagDebugGraphicsPreferOpenGL",
+      "type": "bool",
+      "default": false,
+      "description": "Forces the OpenGL rendering backend. Mostly useful for compatibility on older or unusual hardware.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "FIntGrassMovementReducedMotionFactor",
+      "type": "int",
+      "default": 0,
+      "range": [0, 100],
+      "description": "Reduces grass movement animation. Higher values calm the swaying, which helps if motion makes you uncomfortable.",
+      "category": "Interface",
+      "impact": "quality",
+      "safe": true,
+      "deprecated": false
+    },
+    {
+      "name": "DFIntTaskSchedulerTargetFps",
+      "type": "int",
+      "default": 60,
+      "range": [30, 9999],
+      "description": "This flag was removed from the allowlist in 2025 and no longer affects the client. Kept here for reference only.",
+      "category": "Performance",
       "impact": "performance",
       "safe": true,
       "deprecated": true
     },
     {
-      "name": "DFFlagDebugPauseVoxelizer",
-      "type": "bool",
-      "default": false,
-      "description": "Pauses the voxelizer after the initial load. Roblox removed read access to this flag in 2025.",
+      "name": "FFlagTaskSchedulerLimitTargetFpsTo2402",
+      "type": "int",
+      "default": 0,
+      "range": [0, 240],
+      "description": "This flag was removed from the allowlist in 2025 and no longer affects the client. Kept here for reference only.",
       "category": "Performance",
+      "impact": "performance",
+      "safe": true,
+      "deprecated": true
+    },
+    {
+      "name": "DFIntDebugDynamicRenderKiloPixels",
+      "type": "int",
+      "default": 0,
+      "range": [0, 4000],
+      "description": "This flag was removed from the allowlist in 2025 and no longer affects the client. Kept here for reference only.",
+      "category": "Rendering",
       "impact": "performance",
       "safe": true,
       "deprecated": true
@@ -136,7 +230,7 @@
       "type": "int",
       "default": 0,
       "range": [0, 100],
-      "description": "Controls shadow darkness. Roblox removed read access to this flag in 2025.",
+      "description": "This flag was removed from the allowlist in 2025 and no longer affects the client. Kept here for reference only.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true,
@@ -146,22 +240,11 @@
       "name": "FFlagDisablePostFx",
       "type": "bool",
       "default": false,
-      "description": "Disables post-processing effects like bloom, depth of field, and color grading. Roblox removed read access to this flag in 2025.",
+      "description": "This flag was removed from the allowlist in 2025 and no longer affects the client. Kept here for reference only.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true,
       "deprecated": true
-    },
-    {
-      "name": "FIntDebugForceMSAASamples",
-      "type": "int",
-      "default": 0,
-      "allowed": [1, 2, 4],
-      "description": "Forces MSAA anti-sampling samples. Higher values smooth edges but reduce FPS.",
-      "category": "Rendering",
-      "impact": "quality",
-      "safe": true,
-      "deprecated": false
     }
   ]
 }
