@@ -14,10 +14,16 @@
 
 ----
 
-**Velo Client** is an advanced custom Roblox launcher designed to completely change how you play. Built as a powerful upgrade to older tools like Bloxstrap, Velo Client gives you a much cleaner and simpler interface. It focuses heavily on automatic updates so that both the launcher and your game stay the latest version without you needing to do it manually like Plexity Client and etc. 
+**Velo Client** is an advanced custom Roblox launcher designed to completely change how you play. Built as a powerful upgrade to older tools like Bloxstrap, Velo Client gives you a much cleaner and simpler interface. It focuses heavily on automatic updates so that both the launcher and your game stay the latest version without you needing to do it manually like Plexity Client and etc.
 
 
 It is designed to feel like a real standalone gaming client, bringing lightweight performance, zero bloat, and total freedom, alongside fun features that we cannot leak yet for the future.
+
+## Preview
+
+<div align="center">
+  <img src="https://github.com/Velo-Client/Velo-Client/blob/main/Velo-Client-Dashboard.png?raw=true" alt="Velo Client Dashboard" width="900" />
+</div>
 
 ## About the Source Code & Security
 
