@@ -7,7 +7,7 @@
       "type": "int",
       "default": 9999,
       "range": [30, 9999],
-      "description": "Sets the target frame rate. Roblox may ignore this on some configurations. 9999 = uncapped.",
+      "description": "Sets the target frame rate. Roblox may ignore this on some configurations. 9999 means uncapped.",
       "category": "Performance",
       "impact": "performance",
       "safe": true
@@ -75,7 +75,7 @@
       "type": "int",
       "default": 1,
       "allowed": [0, 1, 2, 3],
-      "description": "Forces texture quality. 0 = lowest (fastest), 3 = highest (best visuals).",
+      "description": "Forces texture quality. 0 is lowest (fastest), 3 is highest (best visuals).",
       "category": "Rendering",
       "impact": "performance",
       "safe": true
@@ -105,7 +105,7 @@
       "type": "int",
       "default": 1,
       "allowed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
-      "description": "Forces a global RenderQuality level. Lower = faster, higher = better visuals.",
+      "description": "Forces a global RenderQuality level. Lower is faster, higher is better visuals.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true
@@ -124,7 +124,7 @@
       "type": "int",
       "default": 0,
       "range": [0, 100],
-      "description": "Controls shadow darkness. 0 = no shadows (fastest).",
+      "description": "Controls shadow darkness. 0 disables shadows entirely, which is the fastest option.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true
@@ -133,7 +133,7 @@
       "name": "FFlagDisablePostFx",
       "type": "bool",
       "default": false,
-      "description": "Disables post-processing effects (bloom, DoF, color grading). Notable FPS gain on low-end GPUs.",
+      "description": "Disables post-processing effects like bloom, depth of field, and color grading. Notable FPS gain on low-end GPUs.",
       "category": "Rendering",
       "impact": "performance",
       "safe": true
@@ -147,68 +147,6 @@
       "category": "Rendering",
       "impact": "quality",
       "safe": true
-    },
-    {
-      "name": "DFIntDebugRestrictGUITimeAsync",
-      "type": "bool",
-      "default": false,
-      "description": "DEPRECATED. Restricted GUI timing. Flag may cause UI freezes.",
-      "category": "Deprecated",
-      "impact": "unknown",
-      "safe": false,
-      "deprecated": true
-    }
-  ],
-  "presets": [
-    {
-      "id": "low-end",
-      "name": "Low-End / VRAM Crash Fix",
-      "author": "Velo Team",
-      "description": "Best for integrated graphics or GPUs with less than 4GB VRAM. Prioritizes stability over visuals.",
-      "flags": {
-        "DFIntCSGLevelOfDetailSwitchingDistance": 100,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL12": 75,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL23": 100,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL34": 150,
-        "DFIntTextureQualityOverride": 1,
-        "FFlagTextureQualityOverrideEnabled": true,
-        "FIntFRMMaxGrassDistance": 0,
-        "FIntRenderShadowIntensity": 0
-      }
-    },
-    {
-      "id": "max-fps",
-      "name": "Maximum FPS (Aggressive)",
-      "author": "Velo Team",
-      "description": "Disables most visual effects. Best for competitive play or very low-end hardware.",
-      "flags": {
-        "DFIntCSGLevelOfDetailSwitchingDistance": 0,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL12": 0,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL23": 0,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL34": 0,
-        "DFIntTextureQualityOverride": 0,
-        "FFlagTextureQualityOverrideEnabled": true,
-        "FFlagDebugSkyGray": true,
-        "DFFlagDebugPauseVoxelizer": true,
-        "FIntFRMMaxGrassDistance": 0,
-        "FIntRenderShadowIntensity": 0,
-        "FFlagDisablePostFx": true
-      }
-    },
-    {
-      "id": "balanced",
-      "name": "Balanced (Recommended)",
-      "author": "Velo Team",
-      "description": "A safe middle-ground. Moderate visual reductions for a solid FPS gain without making the game look bad.",
-      "flags": {
-        "DFIntCSGLevelOfDetailSwitchingDistance": 500,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL12": 150,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL23": 300,
-        "DFIntCSGLevelOfDetailSwitchingDistanceL34": 500,
-        "DFIntTextureQualityOverride": 2,
-        "FFlagTextureQualityOverrideEnabled": true,
-        "FIntRenderShadowIntensity": 50
-      }
     }
   ]
 }
