@@ -10,7 +10,8 @@
       "description": "Sets the target frame rate. Roblox may ignore this on some configurations. 9999 means uncapped.",
       "category": "Performance",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "DFIntCSGLevelOfDetailSwitchingDistance",
@@ -20,7 +21,8 @@
       "description": "Master LOD culling distance for CSG models. Lower values improve FPS by reducing distant geometry detail.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": false
     },
     {
       "name": "DFIntCSGLevelOfDetailSwitchingDistanceL12",
@@ -30,7 +32,8 @@
       "description": "LOD distance for the first transition tier. Affects medium-distance geometry.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": false
     },
     {
       "name": "DFIntCSGLevelOfDetailSwitchingDistanceL23",
@@ -40,7 +43,8 @@
       "description": "LOD distance for the second transition tier.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": false
     },
     {
       "name": "DFIntCSGLevelOfDetailSwitchingDistanceL34",
@@ -50,103 +54,114 @@
       "description": "LOD distance for the third transition tier.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": false
     },
     {
       "name": "FFlagDebugSkyGray",
       "type": "bool",
       "default": false,
-      "description": "Overrides the skybox to a flat gray color and removes atmospheric stars. Can improve FPS in sky-heavy games.",
+      "description": "Overrides the skybox to a flat gray color and removes atmospheric stars. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "FFlagTextureQualityOverrideEnabled",
       "type": "bool",
       "default": true,
-      "description": "Enables the texture quality override below. Must be true for DFIntTextureQualityOverride to take effect.",
+      "description": "Enables the texture quality override below. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "DFIntTextureQualityOverride",
       "type": "int",
       "default": 1,
       "allowed": [0, 1, 2, 3],
-      "description": "Forces texture quality. 0 is lowest (fastest), 3 is highest (best visuals).",
+      "description": "Forces texture quality. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "FIntFRMMaxGrassDistance",
       "type": "int",
       "default": 0,
       "range": [0, 500],
-      "description": "Maximum distance for grass rendering. 0 disables grass entirely.",
+      "description": "Maximum distance for grass rendering. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "FIntFRMMinGrassDistance",
       "type": "int",
       "default": 0,
       "range": [0, 500],
-      "description": "Minimum distance for grass rendering.",
+      "description": "Minimum distance for grass rendering. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "DFIntDebugFRMQualityLevelOverride",
       "type": "int",
       "default": 1,
       "allowed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
-      "description": "Forces a global RenderQuality level. Lower is faster, higher is better visuals.",
+      "description": "Forces a global RenderQuality level. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "DFFlagDebugPauseVoxelizer",
       "type": "bool",
       "default": false,
-      "description": "Pauses the voxelizer after the initial load. Can reduce stutter in large worlds.",
+      "description": "Pauses the voxelizer after the initial load. Roblox removed read access to this flag in 2025.",
       "category": "Performance",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "FIntRenderShadowIntensity",
       "type": "int",
       "default": 0,
       "range": [0, 100],
-      "description": "Controls shadow darkness. 0 disables shadows entirely, which is the fastest option.",
+      "description": "Controls shadow darkness. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "FFlagDisablePostFx",
       "type": "bool",
       "default": false,
-      "description": "Disables post-processing effects like bloom, depth of field, and color grading. Notable FPS gain on low-end GPUs.",
+      "description": "Disables post-processing effects like bloom, depth of field, and color grading. Roblox removed read access to this flag in 2025.",
       "category": "Rendering",
       "impact": "performance",
-      "safe": true
+      "safe": true,
+      "deprecated": true
     },
     {
       "name": "FIntDebugForceMSAASamples",
       "type": "int",
       "default": 0,
       "allowed": [1, 2, 4],
-      "description": "Forces MSAA anti-aliasing samples. Higher values smooth edges but reduce FPS.",
+      "description": "Forces MSAA anti-sampling samples. Higher values smooth edges but reduce FPS.",
       "category": "Rendering",
       "impact": "quality",
-      "safe": true
+      "safe": true,
+      "deprecated": false
     }
   ]
 }
