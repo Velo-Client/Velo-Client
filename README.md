@@ -22,7 +22,7 @@ It is designed to feel like a real standalone gaming client, bringing lightweigh
 ## Preview
 
 <div align="center">
-  <img src="https://github.com/Velo-Client/Velo-Client/blob/main/Velo-Client-Dashboard.png?raw=true" alt="Velo Client Dashboard" width="900" />
+  <img src="https://github.com/Velo-Client/Velo-Client/blob/main/Velo-Client-Dashboard hidden.png?raw=true" alt="Velo Client Dashboard" width="900" />
 </div>
 
 ## About the Source Code & Security
