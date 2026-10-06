@@ -1,0 +1,214 @@
+{
+  "version": "2026.10",
+  "updated": "2026-10-06",
+  "flags": [
+    {
+      "name": "DFIntTaskSchedulerTargetFps",
+      "type": "int",
+      "default": 9999,
+      "range": [30, 9999],
+      "description": "Sets the target frame rate. Roblox may ignore this on some configurations. 9999 = uncapped.",
+      "category": "Performance",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFIntCSGLevelOfDetailSwitchingDistance",
+      "type": "int",
+      "default": 1000,
+      "range": [0, 1000],
+      "description": "Master LOD culling distance for CSG models. Lower values improve FPS by reducing distant geometry detail.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFIntCSGLevelOfDetailSwitchingDistanceL12",
+      "type": "int",
+      "default": 250,
+      "range": [0, 500],
+      "description": "LOD distance for the first transition tier. Affects medium-distance geometry.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFIntCSGLevelOfDetailSwitchingDistanceL23",
+      "type": "int",
+      "default": 500,
+      "range": [0, 1000],
+      "description": "LOD distance for the second transition tier.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFIntCSGLevelOfDetailSwitchingDistanceL34",
+      "type": "int",
+      "default": 750,
+      "range": [0, 2000],
+      "description": "LOD distance for the third transition tier.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FFlagDebugSkyGray",
+      "type": "bool",
+      "default": false,
+      "description": "Overrides the skybox to a flat gray color and removes atmospheric stars. Can improve FPS in sky-heavy games.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FFlagTextureQualityOverrideEnabled",
+      "type": "bool",
+      "default": true,
+      "description": "Enables the texture quality override below. Must be true for DFIntTextureQualityOverride to take effect.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFIntTextureQualityOverride",
+      "type": "int",
+      "default": 1,
+      "allowed": [0, 1, 2, 3],
+      "description": "Forces texture quality. 0 = lowest (fastest), 3 = highest (best visuals).",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FIntFRMMaxGrassDistance",
+      "type": "int",
+      "default": 0,
+      "range": [0, 500],
+      "description": "Maximum distance for grass rendering. 0 disables grass entirely.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FIntFRMMinGrassDistance",
+      "type": "int",
+      "default": 0,
+      "range": [0, 500],
+      "description": "Minimum distance for grass rendering.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFIntDebugFRMQualityLevelOverride",
+      "type": "int",
+      "default": 1,
+      "allowed": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21],
+      "description": "Forces a global RenderQuality level. Lower = faster, higher = better visuals.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "DFFlagDebugPauseVoxelizer",
+      "type": "bool",
+      "default": false,
+      "description": "Pauses the voxelizer after the initial load. Can reduce stutter in large worlds.",
+      "category": "Performance",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FIntRenderShadowIntensity",
+      "type": "int",
+      "default": 0,
+      "range": [0, 100],
+      "description": "Controls shadow darkness. 0 = no shadows (fastest).",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FFlagDisablePostFx",
+      "type": "bool",
+      "default": false,
+      "description": "Disables post-processing effects (bloom, DoF, color grading). Notable FPS gain on low-end GPUs.",
+      "category": "Rendering",
+      "impact": "performance",
+      "safe": true
+    },
+    {
+      "name": "FIntDebugForceMSAASamples",
+      "type": "int",
+      "default": 0,
+      "allowed": [1, 2, 4],
+      "description": "Forces MSAA anti-aliasing samples. Higher values smooth edges but reduce FPS.",
+      "category": "Rendering",
+      "impact": "quality",
+      "safe": true
+    },
+    {
+      "name": "DFIntDebugRestrictGUITimeAsync",
+      "type": "bool",
+      "default": false,
+      "description": "DEPRECATED. Restricted GUI timing. Flag may cause UI freezes.",
+      "category": "Deprecated",
+      "impact": "unknown",
+      "safe": false,
+      "deprecated": true
+    }
+  ],
+  "presets": [
+    {
+      "id": "low-end",
+      "name": "Low-End / VRAM Crash Fix",
+      "author": "Velo Team",
+      "description": "Best for integrated graphics or GPUs with less than 4GB VRAM. Prioritizes stability over visuals.",
+      "flags": {
+        "DFIntCSGLevelOfDetailSwitchingDistance": 100,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL12": 75,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL23": 100,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL34": 150,
+        "DFIntTextureQualityOverride": 1,
+        "FFlagTextureQualityOverrideEnabled": true,
+        "FIntFRMMaxGrassDistance": 0,
+        "FIntRenderShadowIntensity": 0
+      }
+    },
+    {
+      "id": "max-fps",
+      "name": "Maximum FPS (Aggressive)",
+      "author": "Velo Team",
+      "description": "Disables most visual effects. Best for competitive play or very low-end hardware.",
+      "flags": {
+        "DFIntCSGLevelOfDetailSwitchingDistance": 0,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL12": 0,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL23": 0,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL34": 0,
+        "DFIntTextureQualityOverride": 0,
+        "FFlagTextureQualityOverrideEnabled": true,
+        "FFlagDebugSkyGray": true,
+        "DFFlagDebugPauseVoxelizer": true,
+        "FIntFRMMaxGrassDistance": 0,
+        "FIntRenderShadowIntensity": 0,
+        "FFlagDisablePostFx": true
+      }
+    },
+    {
+      "id": "balanced",
+      "name": "Balanced (Recommended)",
+      "author": "Velo Team",
+      "description": "A safe middle-ground. Moderate visual reductions for a solid FPS gain without making the game look bad.",
+      "flags": {
+        "DFIntCSGLevelOfDetailSwitchingDistance": 500,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL12": 150,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL23": 300,
+        "DFIntCSGLevelOfDetailSwitchingDistanceL34": 500,
+        "DFIntTextureQualityOverride": 2,
+        "FFlagTextureQualityOverrideEnabled": true,
+        "FIntRenderShadowIntensity": 50
+      }
+    }
+  ]
+}
