@@ -19,6 +19,8 @@
 
 It is designed to feel like a real standalone gaming client, bringing lightweight performance, zero bloat, and total freedom, alongside fun features that we cannot leak yet for the future.
 
+This is only for fun, managed only by a few people updates are whenever we feel like it, this is not that serious but if this was to go a little big we'll probably make it **official.**
+
 ## Preview
 
 <div align="center">
