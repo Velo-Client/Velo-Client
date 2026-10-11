@@ -27,7 +27,8 @@ It is designed to feel like a real standalone gaming client, bringing lightweigh
 
 ## About the Source Code & Security
 
-Please note that **the source code for Velo Client is closed-source** and will not be published publicly, mostly for safety and anti-theft protection. 
+Please note that **the source code for Velo Client is closed-source** and will not be published publicly, mostly for safety and anti-theft protection. You do NOT need to download or use it if you don't want we not care if you do or not this is not some 
+reverse psychology or tactic, we genuinely DO NOT care or have time for hate. Either test it through vms and virus total or just don't even try download and use it.
 
 Because the binaries are protected using code obfuscation to prevent unauthorized tampering, **certain antivirus programs or Windows SmartScreen may flag the executable as a false positive**. This is normal behavior for obfuscated software. If you trust this repository, you can safely bypass the warning to run the application.
 
